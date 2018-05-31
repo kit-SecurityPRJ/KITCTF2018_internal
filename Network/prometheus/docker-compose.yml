@@ -1,0 +1,13 @@
+version: "2.0"
+
+services:
+  cowrie:
+    restart: always
+    image: wonderfall/cowrie
+    ports:
+      - "2222:2222"
+      - "2223:2223"
+    tty: true
+    volumes: 
+      - "./log:/cowrie/log"
+    
